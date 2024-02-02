@@ -6,6 +6,7 @@
     <title>Bancaire</title>
   </head>
   <body>
+    <form action="https://www.bing.com//search" method="get">
     <fieldset>
       <legend>Nom de titulaire</legend>
       <input type="text" placeholder="Entrer le nom du titulaire" /><br />
@@ -15,7 +16,6 @@
       <legend>Nom de carte</legend>
       <input type="text" placeholder="Entrer le nom de carte" /><br />
     </fieldset>
-
     <table>
       <tr>
         <td>mois</td>
@@ -24,25 +24,28 @@
       </tr>
       <br />
       <tr>
-        <td><input type="number" name="" id="" maxlength="2" /></td>
-        <td><input type="number" name="" id="" maxlength="2" /></td>
-        <td><input type="number" name="" id="" maxlength="2" /></td>
+        <td><input type="number" name="mois" id="mois" max="12" min="1" /></td>
+        <td><input type="number" name="year" id="year" max="2999" min="1900" /></td>
+        <td><input type="number" name="vvv" id="vvv" max="999" min="001"/></td>
       </tr>
     </table>
     <br />
-
+    <hr>
+    
     <fieldset>
       <legend>Select votre carte</legend>
-      <label for="carte">Master</label>
+      <label for="carte1">Master</label>
       <input type="radio" name="carte" id="carte1" />
 
-      <label for="carte">Visa</label>
+      <label for="carte2">Visa</label>
       <input type="radio" name="carte" id="carte2" />
 
-      <label for="carte">American Express</label>
+      <label for="carte3">American Express</label>
       <input type="radio" name="carte" id="carte3" />
 
     </fieldset>
     <input type="submit" value="Submit" />
-  </body>
+  </form>
+ </body>
+
 </html>
